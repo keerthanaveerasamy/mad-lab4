@@ -8,6 +8,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.app.Activity;
  
+import learn2crack.androidfile.FileOperations;
+ 
 public class MainActivity extends Activity {
     EditText fname,fcontent,fnameread;
     Button write,read;
@@ -17,12 +19,12 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        fname = (EditText)findViewById(R.id.RelativeLayout01);
-        fcontent = (EditText)findViewById(R.id.RelativeLayout01);
-        fnameread = (EditText)findViewById(R.id.RelativeLayout01);
-        write = (Button)findViewById(R.id.RelativeLayout01);
-        read = (Button)findViewById(R.id.RelativeLayout01);
-        filecon = (TextView)findViewById(R.id.RelativeLayout01);
+        fname = (EditText)findViewById(R.id.fname);
+        fcontent = (EditText)findViewById(R.id.ftext);
+        fnameread = (EditText)findViewById(R.id.fnameread);
+        write = (Button)findViewById(R.id.btnwrite);
+        read = (Button)findViewById(R.id.btnread);
+        filecon = (TextView)findViewById(R.id.filecon);
         write.setOnClickListener(new View.OnClickListener() {
  
         @Override
